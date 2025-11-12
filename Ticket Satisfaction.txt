@@ -1,5 +1,0 @@
-##lang.ticket.title## : ##ticket.title##
-
-##lang.ticket.closedate## : ##ticket.closedate##
-
-##lang.satisfaction.text## ##ticket.urlsatisfaction##

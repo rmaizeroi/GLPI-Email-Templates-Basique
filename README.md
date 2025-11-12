@@ -1,6 +1,6 @@
 # GLPI : Modèle de notifications
 
-Les modèles de notification par défaut de GLPI n'étant pas très "lisibles", j’ai donc repris le travail de "eduardomozart/GLPI-Email-Templates", lui-même inspiré des templates de [hmarthe/TCAT-M-osTicket-Email-Templates](https://github.com/hmarthe/TCAT-M-osTicket-Email-Templates), pour en proposer une version simpliste et adaptée en français.
+Les modèles de notification par défaut de GLPI n'étant pas très "lisibles", j’ai donc repris le travail de [eduardomozart/GLPI-Email-Templates](https://github.com/eduardomozart/GLPI-Email-Templates), lui-même inspiré des templates de [hmarthe/TCAT-M-osTicket-Email-Templates](https://github.com/hmarthe/TCAT-M-osTicket-Email-Templates), pour en proposer une version simpliste et adaptée en français.
 
 Ce modèle a été testé avec succès sur :
 

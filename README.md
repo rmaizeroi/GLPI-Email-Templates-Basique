@@ -17,13 +17,13 @@ Ce modèle a été testé avec succès sur :
 
 *Nouveau Suivi*
 
-![Nouvelle tache](/imgs/Captures/03_nouvelle_tache.png?raw=true "Nouveau tache")
+![Nouvelle tache](/imgs/Captures/03_nouvelle_tache.png?raw=true "Nouvelle tache")
 
-*Nouveau tache*
+*Nouvelle tache*
 
-![Ticket résolu](/imgs/Captures/04_résolution.png?raw=true "Ticket résolu")
+![Ticket résolu](/imgs/Captures/04_résolution.png?raw=true "Résolution")
 
-*Ticket résolu*
+*Résolution*
 
 ## Informations
 

@@ -9,59 +9,34 @@ Ce modèle a été testé avec succès sur :
 
 ## Screenshots
 
-![Novo acompanhamento (New ticket)](/screenshots/new-ticket.png?raw=true "Novo acompanhamento (New ticket)")
+![Nouveau ticket](/imgs/Captures/01_nouveau_ticket.png?raw=true "Nouveau Ticket")
 
-*Novo chamado (New ticket).*
+*Nouveau ticket*
  
-![Novo acompanhamento (New followup)](/screenshots/new-followup.png?raw=true "Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a ticket)")
+![Nouveau Suivi](/imgs/Captures/02_nouveau_suivi.png?raw=true "Nouveau suivi")
 
-*Novo acompanhamento (New followup)/Atualização de um acompanhamento (Update of a followup).*
+*Nouveau Suivi*
 
-![Novo acompanhamento (New followup)](/screenshots/new-or-update-task.png?raw=true "Nova tarefa (New task)/Atualização de uma tarefa (Update of a task)")
+![Nouvelle tache](/imgs/Captures/03_nouvelle_tache.png?raw=true "Nouveau tache")
 
-*Nova tarefa (New task)/Atualização de uma tarefa (Update of a task).*
+*Nouveau tache*
 
-![Chamado solucionado (Ticket solved)](/screenshots/solution.png?raw=true "Chamado solucionado (Ticket solved)")
+![Ticket résolu](/imgs/Captures/04_résolution.png?raw=true "Ticket résolu")
 
-*Chamado solucionado (Ticket solved).*
+*Ticket résolu*
 
-![Pesquisa de satisfação (Satisfaction survey)](/screenshots/ticket-satisfaction.png?raw=true "Pesquisa de satisfação (Satisfaction survey)")
+## Informations
 
-*Pesquisa de satisfação (Satisfaction survey).*
+Contrairement aux modèles originaux, ma version se base exclusivement sur l’état du ticket pour déterminer le contenu des messages.
+Note : je n’ai pas réussi à “imbriquer” les tâches et les suivis dans le récapitulatif du ticket.
 
-![Resposta da pesquisa de satisfação (Satisfaction survey answer)](/screenshots/ticket-satisfaction-response.png?raw=true "Resposta da pesquisa de satisfação (Satisfaction survey answer)")
+### Installation
 
-*Resposta da pesquisa de satisfação (Satisfaction survey).*
-
-## Translation
-
-These templates rely on ``ticket.action`` to adapt the message body (HTML) to correspond to the notification type (new ticket, new followup, etc), but this method rely on translated strings, e.g. to detect that the message refers to a "New ticket", the template detects it with ``##IFticket.action=Novo chamado##``. **Novo chamado** is the translation to "New ticket" in "Português do Brasil".
-
-Another function that has depends on translated strings are ``ticket.isprivate``, e.g. to detect that a followup or task has been marked as private, it uses the function ``##IFticket.isprivate=Não##``. "**Não**" is the translation to "No" in "Português do Brasil".
-
-You'll need to translate all ``ticket.action`` and ``ticket.isprivate`` function calls into the template files according to your language before deploying it into your GLPI instance if you're not using the language "Português do Brasil" by default into your environment.
-
-## Installation
-
-As cited on "**Translation**" section, it relies on translated strings to detect the notification type (new ticket, new followup, etc) and to detect if a task or followup has been marked as private, so you'll need to create a specific notification template for each language that you would like to support.
-
-### Tickets Template
-
-1. In **Setup** > **Notifications** > **Notification Templates**, click on **Tickets** in the list.
-1. Click on **Template translations** > **Add a New Translation**.
-1. Select your language into **Language** dropdown, e.g. "Português do Brasil".
-1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
-1. In **Email text body**, paste the content of the ``Tickets.txt`` template.
-1. In **Email HTML body**, click on the option "Source code" and paste the HTML body of the ``Tickets.html`` template.
-
-### Ticket Satisfaction Template
-
-1. In **Setup** > **Notifications** > **Notification Templates**, click on **Tickets Satisfaction** in the list.
-1. Click on **Template translations** > **Add a New Translation**.
-1. Select your language into **Language** dropdown, e.g. "Português do Brasil".
-1. Enter the **Subject** of the notification template (Default: ``##ticket.action## ##ticket.title##``)
-1. In **Email text body**, paste the content of the ``Ticket Satisfaction.txt`` template.
-1. In **Email HTML body**, click on the option "Source code" and paste the HTML body of the ``Tickets Satisfaction.html`` template.
+1. Dans Configuration > Notifications > Modèles de notification, cliquez sur Tickets dans la liste.
+2. Cliquez sur Traductions du modèle > Ajouter une nouvelle traduction.
+3. Sélectionnez la langue dans le menu déroulant
+4. Saisissez l’objet du modèle de notification (par défaut : ##ticket.action## ##ticket.title##).
+5. Dans Corps du message (HTML), collez le contenu du fichier glpi-mail-suivi.html
 
 ## License
 

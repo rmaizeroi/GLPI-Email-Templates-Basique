@@ -36,20 +36,8 @@ Note : je n’ai pas réussi à “imbriquer” les tâches et les suivis dans
 2. Cliquez sur Traductions du modèle > Ajouter une nouvelle traduction.
 3. Sélectionnez la langue dans le menu déroulant
 4. Saisissez l’objet du modèle de notification (par défaut : ##ticket.action## ##ticket.title##).
-5. Dans Corps du message (HTML), collez le contenu du fichier glpi-mail-suivi.html
+5. Dans Corps du message (HTML), collez le contenu du fichier glpi-mail-xxx.html
 
 ## License
 
 [GNU General Public License v3.0](LICENSE) License.
-
-## Useful Links
-
-1. [GLPI - Notification Tags](https://pt.scribd.com/document/248614338/2GLPI-Lista-de-Tags-Disponiveis).
-1. [Template de notificações para o GLPI responsivo](https://falati.com.br/template-email-responsivo-glpi/). Fala TI.
-1. [Adicionando template de notificações via email personalizados no GLPI (Abertura, Acompanhamento e Encerramento de chamados)](http://nattanielafonso.com.br/adicionando-template-de-notificacoes-via-email-personalizados-no-glpi-abertura-acompanhamento-e-encerramento-de-chamados/). Nattaniel Afonso.
-1. [Notificações no GLPI em HTML e CSS que funciona no Gmail](http://www.thiagopassamani.com.br/tags/glpi-notification-template-mail). Thiago Passamani.
-1. [Scripts for Email Template](https://community.spiceworks.com/scripts?category=15). Spiceworks.
-1. [Free HTML Email Templates for SaaS and Startups](https://www.htmlemailtemplates.net/free-stuff/free-html-email-templates/). HTML Email Templates for SaaS and Startups.
-1. [Email template](https://www.helpdesk.com/help/email-template/). HelpDesk Help Center.
-1. [Free Responsive Simple HTML Email Template](https://github.com/leemunroe/responsive-html-email-template). GitHub.
-1. [Email Template Examples](https://github.com/zendesklabs/email_template_examples). ZendeskLabs (GitHub).

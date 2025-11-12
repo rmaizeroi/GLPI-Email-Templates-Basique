@@ -1,0 +1,101 @@
+<p style="text-align: center;">
+    <img src="https://raw.githubusercontent.com/glpi-project/glpi/main/public/pics/logos/logo-GLPI-250-black.png" alt="GLPI Logo" width="112" height="68">
+</p>
+
+<div style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">
+
+    ##IFticket.storestatus=1##
+		<p>Un nouveau ticket a été créé avec succès :</p>
+		<p>Numéro : <strong>##ticket.id##</strong><br>Sujet : <strong>##ticket.title##</strong> ##IFticket.category##<br>Catégorie : <strong>##ticket.category##</strong>##ENDIFticket.category##<br>Statut actuel : <strong>Nouveau ticket</strong><br><br>Si vous souhaitez répondre à ce message ou ajouter des informations complémentaires, cliquez sur ce <strong><a href="##ticket.url##">lien</a></strong>.</p>
+    ##ENDIFticket.storestatus##
+
+    ##IFticket.storestatus=2##
+		<p>Un ticket vous concernant a été mis à jour :</p>
+		<p>Numéro : <strong>##ticket.id##</strong><br>Sujet : <strong>##ticket.title##</strong> ##IFticket.category##<br>Catégorie : <strong>##ticket.category##</strong>##ENDIFticket.category##<br>Statut actuel : <strong>En cours de traitement</strong><br><br>Si vous souhaitez répondre à ce message ou ajouter des informations complémentaires, cliquez sur ce <strong><a href="##ticket.url##">lien</a></strong>.</p>
+    ##ENDIFticket.storestatus##
+
+    ##IFticket.storestatus=3##
+		<p>Une action dans un ticket vous concernant a été planifiée :</p>
+		<p>Numéro : <strong>##ticket.id##</strong><br>Sujet : <strong>##ticket.title##</strong> ##IFticket.category##<br>Catégorie : <strong>##ticket.category##</strong>##ENDIFticket.category##<br>Statut actuel : <strong>Action planifiée</strong><br><br>Si vous souhaitez répondre à ce message ou ajouter des informations complémentaires, cliquez sur ce <strong><a href="##ticket.url##">lien</a></strong>.</p>
+    ##ENDIFticket.storestatus##
+
+    ##IFticket.storestatus=4##
+		<p>Un ticket vous concernant est en attente d'une information de votre part :</p>
+		<p>Numéro : <strong>##ticket.id##</strong><br>Sujet : <strong>##ticket.title##</strong> ##IFticket.category##<br>Catégorie : <strong>##ticket.category##</strong>##ENDIFticket.category##<br>Statut actuel : <strong>En attente d'une action du demandeur</strong><br><br>Si vous souhaitez répondre à ce message ou ajouter des informations complémentaires, cliquez sur ce <strong><a href="##ticket.url##">lien</a></strong>.</p>
+    ##ENDIFticket.storestatus##
+
+    ##IFticket.storestatus=5##
+		<p>Un ticket vous concernant a été résolu :</p>
+		<p>Numéro : <strong>##ticket.id##</strong><br>Sujet : <strong>##ticket.title##</strong> ##IFticket.category##<br>Catégorie : <strong>##ticket.category##</strong>##ENDIFticket.category##<br>Date de résolution : <strong>##ticket.solvedate##</strong><br><br>Vous disposez à présent d'une période de 7 jours à compter de la réception de ce message pour nous faire part de toute insatisfaction persistante ou de tout ticket subsistant.
+		Pour ce faire, veuillez accéder à la page de votre <strong><a href="##ticket.url##">ticket</a></strong> et cliquer sur le bouton <strong>"Refuser la solution"</strong>.<br> 
+		À défaut de recevoir une réponse de votre part dans ce délai imparti, le ticket sera automatiquement clôturé.</p>
+        <table border="0" width="80%" cellspacing="0" cellpadding="0" align="center">
+            <tbody>
+                <tr>
+                    <td style="background: #9FD6ED; padding: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left; border-radius: 10px;" valign="top">
+                        <div>
+                            <span style="text-decoration: underline;"><strong>Message (Solution) :</strong></span><br>
+                            ##ticket.solution.description##
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 15px;" align="center">
+                        <table border="0" cellspacing="10" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #cf142b; border: 1px solid #cf142b; padding: 5px 10px; border-radius: 5px;" align="center" valign="middle" height="33">
+                                        <a style="color: #cf142b; font-weight: bold; text-decoration: none;" href="##ticket.urlapprove##">Refuser la solution</a>
+                                    </td>
+                                    <td style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #2c729e; border: 1px solid #2C729E; padding: 5px 10px; border-radius: 5px;" align="center" valign="middle" height="33">
+                                        <a style="color: #2c729e; font-weight: bold; text-decoration: none;" href="##ticket.urlapprove##">Approuver la solution</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    ##ENDIFticket.storestatus##
+
+    ##IFticket.storestatus=6##
+        <p>Un ticket vous concernant a été clôturé :</p>
+		<p>Numéro : <strong>##ticket.id##</strong><br>Sujet : <strong>##ticket.title##</strong> ##IFticket.category##<br>Catégorie : <strong>##ticket.category##</strong>##ENDIFticket.category##<br>Statut actuel : <strong>Clos</strong><br><br>Si ce ticket est toujours d’actualité, merci d'en créer un nouveau en mentionnant le numéro du ticket clôturé.</p>
+    ##ENDIFticket.storestatus##
+</div>
+
+
+##FOREACHtasks##		
+    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0">
+        <tbody>
+                <td style="background: #feda90; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left; border-radius: 10px;" valign="top">
+                    <div>
+                        <blockquote span style="margin: 0; text-decoration: none;">
+                            <span style="font-family: Arial, Helvetica, sans-serif; font-size:12px;">
+                    Auteur : <strong>##task.author##</strong> | Date : <strong>##task.date##</strong> | Statut : <strong>##task.status##</strong><br>
+                  </span><br/> 
+                            ##task.description##</blockquote>
+                    </div>
+                </td>
+        </tbody>
+    </table>
+##ENDFOREACHtasks##
+
+<p><span style="color: #858988;"><strong>Rappel de la demande initiale :</strong></span></p>
+    <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0">
+        <tbody>
+                <td style="background: #95d6ed; padding: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: left; border-radius: 10px;" valign="top">
+                    <div>
+                        <blockquote span style="margin: 0; text-decoration: none;"> 
+                            ##ticket.content##</blockquote>
+                    </div>
+                </td>
+        </tbody>
+    </table>
+
+<p style="text-align: center; padding-top: 20px;">
+    <a href="https://glpi.domaine.fr/">
+        <img src="https://www.domaine.png" alt="Logo entreprise" width="150" height="150">
+    </a>
+</p>
